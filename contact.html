@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anouar</title>
+    <script>
+        function validateForm(event) {
+    event.preventDefault(); // prevent the default form submission behavior
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+    } else {
+        // If all fields are filled, you can submit the form or perform other actions here
+        alert("Form submitted successfully!");
+        // document.getElementById("yourFormId").submit(); // Uncomment this line to submit the form
+    }
+}
+    </script>
+</head>
+    <body>    
+        <header>
+            <a href="index.html" class="logo">Anouar</a>
+            <nav class="navigation">
+                <a href="experience.html">Experience</a>
+                <a href="CurriculumVitae.html">Curriculum Vitae</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+    
+            
+            main {
+                max-width: 800px;
+                margin: 0px auto;
+                padding: 50px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
+    
+            input,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 70px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
+       
+    
+    
+       
+    
+        <main>
+            <section id="contact-form">
+                <h2>Contact Form</h2>
+                <form action="#" method="post" onsubmit="return validateForm(event)">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" >
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" >
+    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" ></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+    
+        
+        <footer class="footer">
+            <p class="footer-title">Copyrights @ <span>Hichri Anouar</span></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/anouar-hichri-4b25a9229/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/anouar.hichri/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/anouar.hichri2/"><i class="fab fa-facebook"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>
